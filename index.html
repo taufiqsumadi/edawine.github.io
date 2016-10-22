@@ -40,6 +40,7 @@
     </tr>
   </thead>
   <tbody>
+    <button>Toggle hiding and showing</button>
     <tr>
       <td><a href="https://mnafian.github.io">mnafian</a></td>
       <td><a href="https://github.com/mnafian/mnafian.github.io">mnafian's repo</a></td>
@@ -305,6 +306,13 @@
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("tr").toggle(500);
+        });
+    });
+    </script>
   </body>
 </html>
